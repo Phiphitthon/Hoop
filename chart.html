@@ -1,0 +1,23 @@
+<canvas id="expenseChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('expenseChart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['เดือนก่อนหน้า', 'เดือนปัจจุบัน'],
+      datasets: [{
+        label: 'รายรับ',
+        data: [/* ข้อมูลรายรับ */],
+        backgroundColor: 'rgba(0, 255, 0, 0.2)',
+        borderColor: 'rgba(0, 255, 0, 1)',
+      }, {
+        label: 'รายจ่าย',
+        data: [/* ข้อมูลรายจ่าย */],
+        backgroundColor: 'rgba(255, 0, 0, 0.2)',
+        borderColor: 'rgba(255, 0, 0, 1)',
+      }]
+    },
+  });
+</script>

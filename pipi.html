@@ -1,0 +1,16 @@
+<form id="transactionForm">
+    <input type="number" id="amount" placeholder="จำนวน" required>
+    <input type="date" id="date" required>
+    <select id="type">
+      <option value="income">รายรับ</option>
+      <option value="expense">รายจ่าย</option>
+    </select>
+    <input type="text" id="note" placeholder="โน้ต">
+    <button type="submit">บันทึก</button>
+  </form>
+  
+  <ul id="transactionsList"></ul>
+  <p id="balance"></p>
+  
+  <script src="app.js"></script>
+  
